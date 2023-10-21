@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Traversing</title>
+  </head>
+  <body>
+    <script>
+      let arr = [9, 45, 1, 43, 545, 53, 0, 124];
+
+      arr.forEach((e) => {
+        console.log(`This are the elements ${e}`);
+      });
+
+      //   Array Traversing
+      for (let i = 0; i < arr.length; i++) {
+        document.write(`${arr[i]} <br>`);
+      }
+
+      //   Array accesing
+      document.writeln(arr[5]);
+
+      //
+
+      //   Accessing value using input
+      function GetBtu() {
+        let el = document.getElementById("element").value;
+        if (el < arr.length) {
+          alert(arr[el]);
+        } else {
+          alert("Please enter valid input");
+        }
+      }
+    </script>
+
+    <input type="text" id="element" />
+    <button onclick="GetBtu()">Get Element</button>
+  </body>
+</html>
